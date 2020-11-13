@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navigation() {
     return (
-        <div className="navbar">
+        <header className="navbar">
             <div className="navbar_items">
                 <ul>
                     <li><a href="home">home</a></li>
@@ -12,6 +12,6 @@ export default function Navigation() {
                     <li><a href="#myprojects">My Projects</a></li>
                 </ul>
             </div>
-        </div>
+            </header>
     )
 }
