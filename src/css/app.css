@@ -2,6 +2,7 @@
 @import 'home.css';
 @import 'buttons.css';
 @import 'contactForm.css';
+@import 'projects.css';
 
 * { 
     margin: 0;

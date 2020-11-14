@@ -1,4 +1,23 @@
 .title {
-    color: blue;
+    color: black;
     text-align: center;
+    margin-top: 200px;
+}
+
+.icons {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 30px 30px;
+    
+}
+
+.iconsGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    font-size: 1.3rem;
+    display: block;
 }

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* position: absolute;      */
 }
 
 .navbar_items li:hover {
@@ -15,11 +14,13 @@
     display: flex;
 }
 
-.navbar .navbar_items ul li {
+.navbar .navbar_items ul li,
+.signature {
     text-transform: uppercase;
     padding: 1rem;
 }
 
-.navbar .navbar_items ul li a {
+.navbar .navbar_items ul li a,
+.signature a{
     color: black;
 }

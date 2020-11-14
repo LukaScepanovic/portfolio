@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContactForm() {
     return (
-        <div className="contactme" id="contactme">
+        <section className="contactme" id="contactme">
         <h1 className="title">Contact Me</h1>
         <form name="contact" method="POST" data-netlify="true">
           <div className="wrapper">
@@ -21,6 +21,6 @@ export default function ContactForm() {
               </div>
             </div>
           </div></form>
-      </div>
+      </section>
     )
 }
