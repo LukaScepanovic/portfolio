@@ -1,10 +1,18 @@
 .projects {
     background-color: grey;
-    height: 50vh;
 }
 
 .title2 {
     color: black;
     text-align: center;
     margin-top: 100px;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-card.ant-card-bordered.ant-card-hoverable.card {
+    margin: 20px;
 }

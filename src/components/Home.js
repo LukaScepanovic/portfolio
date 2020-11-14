@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
                 <div className="icons">
                     <FaFolderOpen />
-                    <a href="img/cv.pdf" className="links" target="_blank" rel="noreferrer">Download CV</a>
+                    <a href="cv.pdf" className="links" target="_blank" rel="noreferrer">Download CV</a>
                 </div>
             </div>
 
