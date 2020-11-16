@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaFolderOpen } from "react-icons/fa"
 
 export default function Home() {
     const [darkMode, setDarkMode] = React.useState(getInitialMode())
-    React.useEffect(() =>  {
+    React.useEffect(() => {
         localStorage.setItem('dark', JSON.stringify(darkMode))
     }, [darkMode])
 
@@ -15,10 +15,24 @@ export default function Home() {
     return (
         <div className={darkMode ? "dark-mode" : "light-mode"}>
             <nav>
-                <div className="toggle-container">
-                    <button onClick={() => setDarkMode(prevMode => !prevMode)}>Toggle Mode</button>
-                </div>
-            </nav>
+        <div className="toggle-container">
+          <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+          <span className="toggle">
+            <input
+              checked={darkMode}
+              onChange={() => setDarkMode(prevMode => !prevMode)}
+              id="checkbox"
+              className="checkbox"
+              type="checkbox"
+            />
+            <label htmlFor="checkbox" />
+          </span>
+          <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
+          {/* <button onClick={() => setDarkMode(prevMode => !prevMode)}>
+          Toggle
+        </button> */}
+        </div>
+      </nav>
             <section className="home">
                 <h1 className="title">React Frontend Developer</h1>
                 <div className="iconsGrid">
@@ -40,4 +54,5 @@ export default function Home() {
 
     )
 }
+
 
