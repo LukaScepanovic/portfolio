@@ -1,9 +1,11 @@
 import React from 'react'
 
 export default function Navigation() {
+    
+
     return (
         <header className="navbar">
-            <div class="signature">
+            <div className="signature">
                 <a href="home">&#60;Luka Scepanovic/&#62;</a>
             </div>
             <div className="navbar_items">
@@ -16,4 +18,5 @@ export default function Navigation() {
             </div>
         </header>
     )
+    
 }

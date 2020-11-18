@@ -5,8 +5,8 @@ const { Step } = Steps;
 
 export default function Experience() {
     return (
-        <section className="experience">
             <Row align="center">
+                <h1>Work experience</h1>
                 <div className="numList">
                     <Steps direction="vertical" current={1}>
                         <Step title="Finished" description="This is a description." />
@@ -15,7 +15,5 @@ export default function Experience() {
                     </Steps>
                 </div>
             </Row>
-
-        </section>
     )
 }

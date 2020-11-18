@@ -1,4 +1,5 @@
-.btn-primary {
+.btn-primary, 
+.modalBtn {
     display: block;
     width: 200px;
     height: 45px;
@@ -12,14 +13,16 @@
     margin: 50px 50px;
 }
 
-.btn-primary button {
+.btn-primary button,
+.modalBtn button {
     background: none;
     border: none;
     font-size: 18px;
 }
 
 
-.btn-primary:hover {
+.btn-primary:hover,
+.modalBtn:hover {
     background-color: #555;
     cursor: pointer;
 }

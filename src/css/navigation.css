@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to bottom right, rgba(14, 104, 104, 0.418) 50%, rgba(44, 102, 46, 0.281) 50%);
+    height: 1vh;
+    
 }
 
 .navbar_items li:hover {
@@ -18,6 +19,7 @@
 .signature {
     text-transform: uppercase;
     padding: 1rem;
+    font-size: 1.1rem;
 }
 
 .navbar .navbar_items ul li a,

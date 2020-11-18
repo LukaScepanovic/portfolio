@@ -5,6 +5,7 @@
 @import 'projects.css';
 @import 'footer.css';
 @import 'experience.css';
+@import 'modal.css';
 
 * { 
     margin: 0;

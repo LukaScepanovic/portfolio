@@ -5,36 +5,42 @@
 
 .light-mode {
     background-image: linear-gradient(to bottom right, rgba(14, 104, 104, 0.418) 50%, rgba(44, 102, 46, 0.281) 50%);
-    transition: background-color 0.25s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 .light-mode nav {
-    transition: background-color 0.25s ease-out;
+    transition: background-color 0.5s ease-out;
   }
 
 .dark-mode {
-    background-image: linear-gradient(to bottom right, rgba(14, 20, 104, 0.884) 50%, rgba(211, 23, 48, 0.767) 50%);
+    background-image: linear-gradient(to top right, rgba(14, 20, 104, 0.884) 50%, rgba(211, 23, 48, 0.767) 50%);
     color: white;
-    .light-mode nav {
-        transition: background-color 0.25s ease-out;
-      }
 }
 
 .dark-mode h1 {
     color: white;
 }
 
+.dark-mode h3 {
+  color: white;
+}
+
 .dark-mode nav {
     background-color: #1b2938;
+    transition: background-color 0.5s ease-out;
 }
 
 nav {
-    width: 100%;
-    display: flex;
     background-color: steelblue;
-    padding: 20px;
+    padding: 10px;
+    width: min-content;
+    border-radius: 30px;
+    position: sticky;
+    top: 3%;
+    left: 90%;
   }
   
+  /* 
   main {
     padding: 0.5em;
     margin: 0 auto;
@@ -43,9 +49,10 @@ nav {
     line-height: 1.1;
     height: 90vh;
   }
-  
+  */
+
   h1 {
-    margin: 0;
+    font-size: 1.6rem;
   }
   
   .toggle {
@@ -111,6 +118,8 @@ nav {
   }
 
 .title {
+  margin-top: 10rem;
+
     text-align: center;
     line-height: 200px;
 }

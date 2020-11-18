@@ -1,17 +1,68 @@
-.projects {
-    background-color: grey;
-}
 
-.title2 {
-    color: black;
+
+.services {
+    padding: 5% 10%;
     text-align: center;
 }
 
-.cards-grid {
+.diff_services {
     display: flex;
-    justify-content: center;
+    margin-top: 35px;
+    justify-content: space-between;
 }
 
-.ant-card.ant-card-bordered.ant-card-hoverable.card {
-    margin: 20px;
+/* add media querys here or make them responsive in stead of pixels */
+
+
+.diff_service_item {
+    width: 26%;
+    transform: translate(-30%, -30%);   
+    margin-top: 100px;
+}
+
+.diff_service_item img{ 
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 25px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    color: #fff;
+    font-size: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 25rem;
+    height: 20rem;
+    opacity: 0;
+    transform: .5s ease;
+    background: darkslategrey;
+}
+
+.diff_service_item:hover .overlay {
+    opacity: 0.9;
+    transition-duration: 0.8s;
+}
+
+
+.diff_service_item h3 {
+    color: #2292fb;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 40%;
+}
+
+.img-btn {
+    position: absolute;
+    top: 60%;
+    left: 15%;
 }
