@@ -4,7 +4,7 @@
 }
 
 .light-mode {
-    background-image: linear-gradient(to bottom right, rgba(14, 104, 104, 0.418) 50%, rgba(44, 102, 46, 0.281) 50%);
+  background: linear-gradient(45deg, #ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 80%);
     transition: background-color 0.5s ease-out;
 }
 
@@ -13,16 +13,12 @@
   }
 
 .dark-mode {
-    background-image: linear-gradient(to top right, rgba(14, 20, 104, 0.884) 50%, rgba(211, 23, 48, 0.767) 50%);
+  background: linear-gradient(-45deg, #745cff 20%, #8d0b0b 20% 50%, #9169ff 50% 80%, #96ce99 80%);
     color: white;
 }
 
-.dark-mode h1 {
+.dark-mode h1, h3, a, ul, li, text {
     color: white;
-}
-
-.dark-mode h3 {
-  color: white;
 }
 
 .dark-mode nav {
