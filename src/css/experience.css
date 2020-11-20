@@ -2,6 +2,17 @@
     height: 70vh;
 }
 
-.numList {
-    padding-top: 20vh;
-}
+  .ant-tabs-nav .ant-tabs-tab {
+      font-size: 30px;
+      color: whitesmoke;
+
+  }
+
+  .ant-tabs-nav .ant-tabs {
+      color: whitesmoke;
+  }
+
+  .ant-tabs-tabpane {
+      color: white;
+  }
+
