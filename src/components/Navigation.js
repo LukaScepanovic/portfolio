@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function Navigation() {
     
-
     return (
         <header className="navbar">
             <div className="signature">
@@ -12,7 +11,7 @@ export default function Navigation() {
                 <ul>
                     <li><a href="home">home</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="#work experience">work experience</a></li>
+                    <li><a href="#workExperience">work experience</a></li>
                     <li><a href="#contactme">contact me</a></li>
                 </ul>
             </div>

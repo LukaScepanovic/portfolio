@@ -1,4 +1,10 @@
+.projects {
+    height: 100vh;
+}
 
+.projectsTitle {
+    margin-bottom: 100px;
+}
 
 .services {
     padding: 5% 10%;

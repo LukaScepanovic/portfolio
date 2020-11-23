@@ -1,18 +1,31 @@
 .experience {
-    height: 70vh;
+    height: 100vh;
+}
+
+.experienceTitle {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 35px;
 }
 
   .ant-tabs-nav .ant-tabs-tab {
       font-size: 30px;
       color: whitesmoke;
+      
 
   }
 
   .ant-tabs-nav .ant-tabs {
       color: whitesmoke;
+      
   }
 
   .ant-tabs-tabpane {
       color: white;
+      text-align: center;
+  }
+
+  .ant-tabs-nav {
+      text-align: center;
   }
 
