@@ -20,9 +20,9 @@ export default function Experience() {
             <Row gutter={[32, 32]} align="center">
                 <Col>
                 Currently I am doing a remote frontend React internship for one Spanish company, called Akommo.
-              Below please find the preview of the current project that we are building in Akommo.
-              <video width="620" height="400" controls>
-                    <source src="img/reactRecipe.mov" type="video/mp4">
+              Below please find the preview.
+              <video  width="620" height="400" controls className="video">
+                    <source src="img/Akommo.mov" type="video/mp4">
                     </source>
                 </video>
                 </Col>

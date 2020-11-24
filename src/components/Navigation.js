@@ -5,11 +5,11 @@ export default function Navigation() {
     return (
         <header className="navbar">
             <div className="signature">
-                <a href="home">&#60;Luka Scepanovic/&#62;</a>
+                <h1>&#60;Luka Scepanovic/&#62;</h1>
             </div>
             <div className="navbar_items">
                 <ul>
-                    <li><a href="home">home</a></li>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#workExperience">work experience</a></li>
                     <li><a href="#contactme">contact me</a></li>

@@ -1,7 +1,6 @@
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     height: 1vh;
     
@@ -9,6 +8,7 @@
 
 .navbar_items li:hover {
     background-color: #555;
+    border-radius: 20px;
 }
 
 .navbar .navbar_items ul {
@@ -18,11 +18,15 @@
 .navbar .navbar_items ul li,
 .signature {
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 5px 10px;
     font-size: 1.1rem;
+    margin-left: 5px;
 }
 
-.navbar .navbar_items ul li a,
-.signature a{
-    color: black;
+
+.signature h1 {
+    letter-spacing: 0.2cm;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0px 300px 0px 50px;
 }

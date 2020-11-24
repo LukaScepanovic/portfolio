@@ -4,7 +4,7 @@
 }
 
 .light-mode {
-  background: linear-gradient(45deg, #ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 80%);
+  background: linear-gradient(45deg, #597a85 20%, #8aacb6 20% 50%, #d2e8ee 50% 80%, #076b0c4d 80%);
     transition: background-color 0.5s ease-out;
 }
 
@@ -13,13 +13,19 @@
   }
 
 .dark-mode {
-  background: linear-gradient(-45deg, #745cff 20%, #8d0b0b 20% 50%, #9169ff 50% 80%, #96ce99 80%);
+  background: linear-gradient(-45deg, #032b05e7 20%, #08360bbd 20% 50%, #083b0ca9 50% 80%, #076b0c4d 80%);
     color: white;
 }
 
-.dark-mode h1, h3, a, ul, li, text {
+.dark-mode h1 {
     color: white;
 }
+
+.dark-mode ul li {
+  border: 2px solid #2292fb;
+}
+
+
 
 .dark-mode nav {
     background-color: #1b2938;
@@ -37,7 +43,7 @@ nav {
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .toggle {
@@ -103,10 +109,8 @@ nav {
   }
 
 .title {
-  margin-top: 10rem;
-
+    margin-top: 10rem;
     text-align: center;
-    line-height: 200px;
 }
 
 .icons {
@@ -116,7 +120,8 @@ nav {
     
 }
 
-.iconsGrid {
+.iconsGrid, 
+.biggerIconsGrid {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,4 +130,23 @@ nav {
 .links {
     font-size: 1.3rem;
     display: block;
+}
+
+.biggerIconsGrid {
+  margin-top: 100px;
+}
+
+.icons2 {
+  text-align: center;
+  font-size: 3.7rem;
+  margin: 30px 30px;
+  
+}
+
+.icons2:hover {
+  box-shadow: -30px 30px 10px 20px rgba(0,0,0,0.3);
+}
+.skillsTitle{
+  text-align: center;
+  margin-top: 50px;
 }

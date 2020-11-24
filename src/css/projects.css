@@ -3,7 +3,7 @@
 }
 
 .projectsTitle {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .services {
@@ -24,12 +24,14 @@
     width: 26%;
     transform: translate(-30%, -30%);   
     margin-top: 100px;
+    border-radius: 10px;
 }
 
 .diff_service_item img{ 
     width: 25rem;
     height: 20rem;
     margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 .content {
@@ -40,6 +42,7 @@
     color: #fff;
     font-size: 16px;
     margin-bottom: 40px;
+    border-radius: 10px;
 }
 
 .overlay {
@@ -53,19 +56,22 @@
     opacity: 0;
     transform: .5s ease;
     background: darkslategrey;
+    border-radius: 10px;
 }
 
 .diff_service_item:hover .overlay {
     opacity: 0.9;
     transition-duration: 0.8s;
+    border-radius: 10px;
 }
 
 
-.diff_service_item h3 {
-    color: #2292fb;
+.diff_service_item h1 {
     margin-bottom: 5px;
+    font-size: 1.3rem;
     position: absolute;
-    left: 40%;
+    left: 35%;
+    top: -15%;
 }
 
 .img-btn {

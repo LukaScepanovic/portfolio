@@ -1,8 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Modal from './Modal'
 
 export default function Projects() {
     const [isOpen, setIsOpen] = useState(false)
+    const [isOpen2, setIsOpen2] = useState(false)
+    const [isOpen3, setIsOpen3] = useState(false)
+
+    // find a better way, so that the menuref is only outside the modal
+    let menuRef = useRef();
+    useEffect(() => {
+        document.addEventListener("mousedown", (event) => {
+            if(!menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+                setIsOpen2(false);
+                setIsOpen3(false);
+            }
+        })
+    })
+
     return (
         <section className="projects" id="projects">
             <div className="services" id="services">
@@ -10,7 +25,7 @@ export default function Projects() {
                 <div className="diff_services">
                     <div className="diff_service_item">
                         <img src="img/reactCourse.png" alt="Service_image" />
-                        <div className="overlay">
+                        <div ref={menuRef} className="overlay">
                             <div className="content">My first React project where I tested all the cool features React has to offer. Feel free to checkout the code on github, or just watch this short video demonstrating all the features of the app.</div>
                             <div className="img-btn">
                                 <button className="modalBtn" onClick={() => setIsOpen(true)}>Demo</button>
@@ -31,12 +46,12 @@ export default function Projects() {
                         <div className="overlay">
                             <div className="content">By doing this project I learned all the major concepts of vanilla Javascript. It included webpack, babel and configuring it with github in order to make the vanilla javascript files interact with each other.</div>
                             <div className="img-btn">
-                                <button className="modalBtn" onClick={() => setIsOpen(true)}>Demo</button>
-                                <Modal open={isOpen} onClose={() => setIsOpen(false)}
+                                <button className="modalBtn" onClick={() => setIsOpen2(true)}>Demo</button>
+                                <Modal open={isOpen2} onClose={() => setIsOpen2(false)}
                                     children={'This project uses vanila Javascript in combination with one recipe API, to generate list of cooking recipes for users. Users can then bookmark the recipes they like, and come back to them later in the right section.'}
 
                                     title={'Search for any recipe'}
-                                    videoSrc={"img/jsRecipe.mov"}
+                                    videoSrc={"img/jsRecipes.mov"}
                                     link={"https://github.com/LukaScepanovic/recipeAPI"}
                                 >
                                 </Modal>
@@ -49,8 +64,8 @@ export default function Projects() {
                         <div className="overlay">
                             <div className="content">After learning HTML and CSS, I wanted to immediately apply my knowledge and do a simple quick project. This is my smallest project that I did in my first months of learning.</div>
                             <div className="img-btn">
-                                <button className="modalBtn" onClick={() => setIsOpen(true)}>Demo</button>
-                                <Modal open={isOpen} onClose={() => setIsOpen(false)}
+                                <button className="modalBtn" onClick={() => setIsOpen3(true)}>Demo</button>
+                                <Modal open={isOpen3} onClose={() => setIsOpen3(false)}
                                     children={'After I learned about CSS animations and how to hook them up with JS, I wanted to test it out and made this simple coin flip, that randomly flips the coin and counts users score based on what coin was called.'}
 
                                     title={'Project description, and link to github code'}
