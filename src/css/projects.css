@@ -12,9 +12,12 @@
 }
 
 .diff_services {
-    display: flex;
-    margin-top: 35px;
+    margin-right: 35px;
     justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
 }
 
 /* add media querys here or make them responsive in stead of pixels */
@@ -69,13 +72,70 @@
 .diff_service_item h1 {
     margin-bottom: 5px;
     font-size: 1.3rem;
-    position: absolute;
-    left: 35%;
-    top: -15%;
+    position: relative;
+    left: 60%;
 }
 
 .img-btn {
     position: absolute;
     top: 60%;
     left: 15%;
+}
+
+
+@media (max-width: 1550px) {
+    .services {
+        padding-top: 0;
+        }
+    
+        .overlay {
+            width: 300px;
+            height: 250px;
+            /* margin-left: 20px; */
+        }
+        .diff_service_item img{ 
+            width: 300px;
+            height: 250px;
+            /* margin-bottom: 25px; */
+            /* margin-left: 20px; */
+        }
+        .diff_service_item h3 {
+            text-align: center;
+            font-size: 16px;
+            /* padding-bottom: 10px; */
+        }
+        /* .services h1 {
+            font-size: 25px;
+            position: relative;
+            height: 80px;
+        } */
+    
+        .content {
+            font-size: 13px;
+        }
+
+        .img-btn {
+            top: 60%;
+            left: 0%;
+        }
+}
+
+@media (max-width: 1167px) {
+    .projects {
+        height: 100vh;
+    }
+    .projectsTitle {
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media (max-width: 793px) {
+    .projects {
+        height: 140vh;
+    }
+    .diff_service_item {
+        margin-top: 10px;
+
+    }
 }

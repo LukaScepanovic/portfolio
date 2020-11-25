@@ -39,7 +39,7 @@ export default function Projects() {
                                 </Modal>
                             </div>
                         </div>
-                        <h3>React Project</h3>
+                        <h1>React Project</h1>
                     </div>
                     <div className="diff_service_item">
                         <img src="img/recipeApi.png" alt="Service_image" />
@@ -57,7 +57,7 @@ export default function Projects() {
                                 </Modal>
                             </div>
                         </div>
-                        <h3>Javascript Project</h3>
+                        <h1>Javascript Project</h1>
                     </div>
                     <div className="diff_service_item">
                         <img src="img/coinFlip.png" alt="Service_image" />
@@ -75,7 +75,7 @@ export default function Projects() {
                                 </Modal>
                             </div>
                         </div>
-                        <h3>Coin Flip</h3>
+                        <h1>Coin Flip</h1>
                     </div>
                 </div>
             </div>
