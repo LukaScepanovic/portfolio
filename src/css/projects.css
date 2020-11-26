@@ -1,5 +1,5 @@
 .projects {
-    height: 125vh;
+    height: 135vh;
 }
 
 .projectsTitle {
@@ -81,7 +81,7 @@
 }
 
 
-@media (max-width: 1550px) {
+@media (max-width: 1167px) {
     .services {
         padding-top: 0;
         }
@@ -120,7 +120,7 @@
 
 @media (max-width: 1167px) {
     .projects {
-        height: 120vh;
+        height: 130vh;
     }
     .diff_services {
         align-items: center; 
@@ -129,7 +129,7 @@
 
 @media (max-width: 1044px) {
     .projects {
-        height: 190vh;
+        height: 210vh;
     }
     
     }

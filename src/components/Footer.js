@@ -7,7 +7,7 @@ export default function Footer() {
                 <a href="home">@ 2020 Luka Scepanovic</a>
             </div>
             <div className="arrow">
-                <a href="home">
+                <a href="#home">
                     <img src="img/arrow.png" alt="up_arrow"></img>
                     </a>
             </div>

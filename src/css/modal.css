@@ -60,7 +60,7 @@
         width: 70%;
         max-width: 70%;
         transition: 500ms ease-in-out;
-        left: 40%;
+        left: 50%;
     }
     .modalVid {
         width: 80%;
@@ -70,7 +70,7 @@
         margin: 0px 0px;
     }
     .children {
-        font-size: 1rem;
+        font-size: 0.85rem;
         padding: 13px 15px;
     }
 }

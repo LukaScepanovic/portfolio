@@ -13,7 +13,7 @@ const content = (
 
 export default function Home() {
     return (
-        <section className="home">
+        <section className="home" id="home">
             <h1 className="title">React Frontend Developer</h1>
             <div className="iconsGrid">
                 <div className="icons">
