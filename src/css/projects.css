@@ -1,9 +1,9 @@
 .projects {
-    height: 100vh;
+    height: 125vh;
 }
 
 .projectsTitle {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .services {
@@ -15,9 +15,7 @@
     margin-right: 35px;
     justify-content: space-between;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 /* add media querys here or make them responsive in stead of pixels */
@@ -26,7 +24,7 @@
 .diff_service_item {
     width: 26%;
     transform: translate(-30%, -30%);   
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -122,20 +120,18 @@
 
 @media (max-width: 1167px) {
     .projects {
-        height: 100vh;
+        height: 120vh;
     }
-    .projectsTitle {
-        margin-bottom: 100px;
-    }
+    .diff_services {
+        justify-items: center; 
+        align-items: center; 
     
 }
 
-@media (max-width: 793px) {
+@media (max-width: 1044px) {
     .projects {
-        height: 140vh;
+        height: 190vh;
     }
-    .diff_service_item {
-        margin-top: 10px;
-
+    
     }
 }

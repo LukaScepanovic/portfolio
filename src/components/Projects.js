@@ -7,16 +7,16 @@ export default function Projects() {
     const [isOpen3, setIsOpen3] = useState(false)
 
     // find a better way, so that the menuref is only outside the modal
-    let menuRef = useRef();
-    useEffect(() => {
-        document.addEventListener("mousedown", (event) => {
-            if(!menuRef.current.contains(event.target)) {
-                setIsOpen(false);
-                setIsOpen2(false);
-                setIsOpen3(false);
-            }
-        })
-    })
+    // let menuRef = useRef();
+    // useEffect(() => {
+    //     document.addEventListener("mousedown", (event) => {
+    //         if(!menuRef.current.contains(event.target)) {
+    //             setIsOpen(false);
+    //             setIsOpen2(false);
+    //             setIsOpen3(false);
+    //         }
+    //     })
+    // })
 
     return (
         <section className="projects" id="projects">
@@ -25,7 +25,8 @@ export default function Projects() {
                 <div className="diff_services">
                     <div className="diff_service_item">
                         <img src="img/reactCourse.png" alt="Service_image" />
-                        <div ref={menuRef} className="overlay">
+                        {/* <div ref={menuRef} className="overlay"> */}
+                        <div className="overlay">
                             <div className="content">My first React project where I tested all the cool features React has to offer. Feel free to checkout the code on github, or just watch this short video demonstrating all the features of the app.</div>
                             <div className="img-btn">
                                 <button className="modalBtn" onClick={() => setIsOpen(true)}>Demo</button>
@@ -59,6 +60,26 @@ export default function Projects() {
                         </div>
                         <h1>Javascript Project</h1>
                     </div>
+
+                    <div className="diff_service_item">
+                        <img src="img/pigGame.png" alt="Service_image" />
+                        <div className="overlay">
+                            <div className="content">After I became comfortable with HTML and CSS, I started learning Javascript by learning theory and then applying it with different projects. This is a simple dice throwing game.</div>
+                            <div className="img-btn">
+                                <button className="modalBtn" onClick={() => setIsOpen2(true)}>Demo</button>
+                                <Modal open={isOpen2} onClose={() => setIsOpen2(false)}
+                                    children={'The rules of the game are that you throw the dice, if you get a 0 on any dice, its next players turn and you lose all points gained that turn. Else, you throw until you want to hold, keeping all prev throws as your score. Once you reach a set score, or 100 default score, you win!'}
+
+                                    title={'Set the winning score and throw the dice'}
+                                    videoSrc={"img/pigGame.mov"}
+                                    link={"https://github.com/LukaScepanovic/Pig-game"}
+                                >
+                                </Modal>
+                            </div>
+                        </div>
+                        <h1>Pig Game</h1>
+                    </div>
+
                     <div className="diff_service_item">
                         <img src="img/coinFlip.png" alt="Service_image" />
                         <div className="overlay">

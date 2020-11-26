@@ -17,7 +17,7 @@ export default function Experience() {
         <div className="experience">
           <Tabs defaultActiveKey="1" style={{'fontSize':'25px'}}>
             <TabPane tab="Current position" key="1" style={{'textAlign':'center'}}>
-            <Row gutter={[32, 32]} align="center">
+            <Row gutter={[32, 32]}>
                 <Col>
                 Currently I am doing a remote frontend React internship for one Spanish company, called Akommo.
               Below please find the preview.
