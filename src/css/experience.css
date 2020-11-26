@@ -49,14 +49,18 @@
     }
 }
 
+#workExperience > div:nth-child(2) > div {
+    max-width: 80%;
+}
+
 @media (max-width: 730px) {
     .video {
-        width: 450px;
-        height: 250px;
+        width: 80%;
+        max-width: 80%;
+    }
+    .experience {
+        height: 70vh;
     }
 }
 
 
-#workExperience > div:nth-child(2) > div {
-    max-width: 80%;
-}

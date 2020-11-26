@@ -62,3 +62,9 @@
 ::-ms-input-placeholder{
     color: #c5ecfd;
 }
+
+@media (max-width: 780px) {
+    .msg textarea {
+        height: 122px;
+    }
+}

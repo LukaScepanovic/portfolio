@@ -53,3 +53,24 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
+
+@media (max-width: 1100px) {
+    .modal {
+        padding-left: 20px;
+        width: 70%;
+        max-width: 70%;
+        transition: 500ms ease-in-out;
+        left: 40%;
+    }
+    .modalVid {
+        width: 80%;
+        max-width: 80%;
+        height: 200px;
+        padding: 0;
+        margin: 0px 0px;
+    }
+    .children {
+        font-size: 1rem;
+        padding: 13px 15px;
+    }
+}

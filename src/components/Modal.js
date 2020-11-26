@@ -17,7 +17,7 @@ export default function Modal({ refClose, open, children, title, onClose, videoS
                 <div className="children">
                     {children}
                 </div>
-                <video width="620" height="400" controls>
+                <video className= "modalVid" width="620" height="400" controls>
                     <source src={videoSrc} type="video/mp4">
                     </source>
                 </video>

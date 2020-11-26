@@ -172,4 +172,7 @@ nav {
   .links {
       font-size: 1rem;
     }
+    .toggle-container > span {
+      font-size: 0.7em;
   }
+}
