@@ -5,6 +5,7 @@ export default function Projects() {
     const [isOpen, setIsOpen] = useState(false)
     const [isOpen2, setIsOpen2] = useState(false)
     const [isOpen3, setIsOpen3] = useState(false)
+    const [isOpen4, setIsOpen4] = useState(false)
 
     // find a better way, so that the menuref is only outside the modal
     // let menuRef = useRef();
@@ -66,8 +67,8 @@ export default function Projects() {
                         <div className="overlay">
                             <div className="content">After I became comfortable with HTML and CSS, I started learning Javascript by learning theory and then applying it with different projects. This is a simple dice throwing game.</div>
                             <div className="img-btn">
-                                <button className="modalBtn" onClick={() => setIsOpen2(true)}>Demo</button>
-                                <Modal open={isOpen2} onClose={() => setIsOpen2(false)}
+                                <button className="modalBtn" onClick={() => setIsOpen3(true)}>Demo</button>
+                                <Modal open={isOpen3} onClose={() => setIsOpen3(false)}
                                     children={'The rules of the game are that you throw the dice, if you get a 0 on any dice, its next players turn and you lose all points gained that turn. Else, you throw until you want to hold, keeping all prev throws as your score. Once you reach a set score, or 100 default score, you win!'}
 
                                     title={'Set the winning score and throw the dice'}
@@ -85,8 +86,8 @@ export default function Projects() {
                         <div className="overlay">
                             <div className="content">After learning HTML and CSS, I wanted to immediately apply my knowledge and do a simple quick project. This is my smallest project that I did in my first months of learning.</div>
                             <div className="img-btn">
-                                <button className="modalBtn" onClick={() => setIsOpen3(true)}>Demo</button>
-                                <Modal open={isOpen3} onClose={() => setIsOpen3(false)}
+                                <button className="modalBtn" onClick={() => setIsOpen4(true)}>Demo</button>
+                                <Modal open={isOpen4} onClose={() => setIsOpen4(false)}
                                     children={'After I learned about CSS animations and how to hook them up with JS, I wanted to test it out and made this simple coin flip, that randomly flips the coin and counts users score based on what coin was called.'}
 
                                     title={'Project description, and link to github code'}
