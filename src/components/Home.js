@@ -6,7 +6,7 @@ import { Popover } from 'antd';
 
 const content = (
     <div>
-      <h4>Hover / Tap us</h4>
+      <h4>Tap us!</h4>
       <p>HTML</p>
     </div>
   );

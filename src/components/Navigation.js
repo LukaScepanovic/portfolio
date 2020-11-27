@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Drawer } from 'antd';
+import { GiHamburgerMenu } from "react-icons/gi"
 
 export default function Navigation() {
 
@@ -14,22 +15,29 @@ export default function Navigation() {
 
 
     return (
-        <header className="navbar">
+        <header className="navbar" id="nav">
             <div className="signature">
                 <h1>&#60;Luka Scepanovic/&#62;</h1>
             </div>
-            <div className="btn-primary" id="btnNav">
-                <button type="primary" onClick={showDrawer}>Open</button>
-              </div>
-
+            <div className="navbar_items" id="computer">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#workExperience">work experience</a></li>
+                        <li><a href="#contactme">contact me</a></li>
+                    </ul>
+                </div>
+            <div className="burger">
+                <GiHamburgerMenu onClick={showDrawer} />
+            </div>
             <Drawer
-                title="Basic Drawer"
+                title="Navigation items"
                 placement="right"
                 closable={false}
                 onClose={onClose}
                 visible={visible}
             >
-                <div className="navbar_items">
+                <div className="navbar_items" id="mobile">
                     <ul>
                         <li><a href="#home">home</a></li>
                         <li><a href="#projects">projects</a></li>
@@ -38,10 +46,8 @@ export default function Navigation() {
                     </ul>
                 </div>
             </Drawer>
-
-        </header >
+        </header>
     )
-
 }
 
 //  const toggleButton = document.getElementsByClassName('toggle-button')[0]

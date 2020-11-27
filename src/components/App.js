@@ -41,7 +41,7 @@ function App() {
         </button> */}
         </div>
       </nav>
-      <Navigation id='nav'/>
+      <Navigation />
       <Home />
       <Divider style={{'backgroundColor':'grey'}}/>
       <Projects />
