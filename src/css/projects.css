@@ -134,3 +134,9 @@
     
     }
 }
+
+@media (max-height: 667px) {
+    .projects {
+        height: 250vh;
+    }
+}

@@ -80,14 +80,18 @@
     #computer {
         display: none;
     }
+    .navbar {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 600px) {
     .signature h1 {
         font-size: 0.7rem;
     }
+   
     .burger {
-        left: 85%;
+        left: 78%;
     }
 }    
 

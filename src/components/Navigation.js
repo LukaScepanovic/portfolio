@@ -15,8 +15,8 @@ export default function Navigation() {
 
 
     return (
-        <header className="navbar" id="nav">
-            <div className="signature">
+        <header className="navbar">
+            <div className="signature" id="nav">
                 <h1>&#60;Luka Scepanovic/&#62;</h1>
             </div>
             <div className="navbar_items" id="computer">
