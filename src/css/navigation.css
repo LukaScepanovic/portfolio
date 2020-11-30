@@ -9,8 +9,6 @@
 .navbar_items li:hover {
     background-color: #555;
     border-radius: 20px;
-    width: 140px;
-    /* padding: 10px; */
 }
 
 .navbar .navbar_items ul {

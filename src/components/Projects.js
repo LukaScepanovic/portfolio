@@ -22,7 +22,7 @@ export default function Projects() {
     return (
         <section className="projects" id="projects">
             <div className="services" id="services">
-                <h1 className="projectsTitle">My Projects</h1>
+                <h1 className="projectsTitle">My Projects (Tap the cards)</h1>
                 <div className="diff_services">
                     <div className="diff_service_item">
                         <img src="img/reactCourse.png" alt="Service_image" />
