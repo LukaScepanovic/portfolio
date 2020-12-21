@@ -1,7 +1,8 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaFolderOpen, FaReact, FaLess } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaFolderOpen, FaReact, FaLess, FaSass } from "react-icons/fa"
 import { AiOutlineAntDesign, AiFillHtml5 } from "react-icons/ai"
 import { DiCss3, DiGitMerge, DiJavascript1 } from "react-icons/di"
+import { GrGraphQl } from "react-icons/gr"
 import { Popover } from 'antd';
 
 const content = (
@@ -52,9 +53,19 @@ export default function Home() {
                         <FaReact />
                     </div>
                 </Popover>
+                <Popover content={'GraphQL basics'}>
+                    <div className="icons2">
+                        <GrGraphQl />
+                    </div>
+                </Popover>
                 <Popover content={'Ant Design'}>
                     <div className="icons2">
                         <AiOutlineAntDesign />
+                    </div>
+                </Popover>
+                <Popover content={'CSS Compiler: SCSS'}>
+                    <div className="icons2">
+                        <FaSass />
                     </div>
                 </Popover>
                 <Popover content={'CSS Compiler: Less'}>
