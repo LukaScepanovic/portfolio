@@ -15,7 +15,7 @@ const content = (
 export default function Home() {
     return (
         <section className="home" id="home">
-            <h1 className="title">React Frontend Developer</h1>
+            <h1 className="title">Vue 3 & React Frontend Developer</h1>
             <div className="iconsGrid">
                 <div className="icons">
                     <FaGithub />
@@ -38,7 +38,7 @@ export default function Home() {
                     </div>
                 </Popover>
 
-                <Popover content={'CSS'}>
+            <Popover content={'CSS'}>
                     <div className="icons2">
                         <DiCss3 />
                     </div>
